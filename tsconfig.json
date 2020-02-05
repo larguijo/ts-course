@@ -2,8 +2,11 @@
     "compilerOptions": {
         "module": "commonjs",
         "target": "es5",
-        "noImplicitAny": false,
-        "sourceMap": false
+        "noImplicitAny": true,
+        "sourceMap": false, // To map you ts files to js files and be able to debug using ts code with the dev tools.
+        "strictNullChecks": true,
+        "noEmitOnError": true,
+        "noUnusedParameters": true
     },
     "exclude": [
         "node_modules"
